@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Linha do tempo do meu aprendizado no semestre com projetos desenvolvidos">
+    <meta property="og:title" content="Portfólio de Aprendizado - Linha do Tempo">
+    <meta property="og:description" content="Minha jornada de aprendizado em desenvolvimento web">
+    <meta property="og:type" content="website">
+    <title>Minha Jornada de Aprendizado | Linha do Tempo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+    <!-- Dark Mode Toggle -->
+    <div class="fixed top-6 right-6 z-50">
+        <label class="relative inline-flex items-center cursor-pointer p-2 rounded-full bg-white/20 backdrop-blur-sm text-white shadow-lg hover:bg-white/30 transition-all">
+            <input type="checkbox" class="sr-only peer" id="darkModeToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon dark:hidden block">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun hidden dark:block">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Meu Portfólio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#intro" class="hover:text-indigo-200 transition duration-300">Introdução</a>
+                    <a href="#timeline" class="hover:text-indigo-200 transition duration-300">Projetos</a>
+                    <a href="#skills" class="hover:text-indigo-200 transition duration-300">Habilidades</a>
+                    <a href="#reflection" class="hover:text-indigo-200 transition duration-300">Reflexão</a>
+                    <a href="#contact" class="hover:text-indigo-200 transition duration-300">Contato</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Minha Jornada de Aprendizado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in delay-1">"Transformando desafios em oportunidades todos os dias!"</p>
+            <div class="flex justify-center space-x-4 animate-fade-in delay-2">
+                <a href="#timeline" class="px-8 py-3 bg-white text-indigo-600 rounded-full font-semibold hover:bg-indigo-100 transition duration-300">Explorar</a>
+                <a href="#contact" class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:bg-opacity-10 transition duration-300">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Introduction Section -->
+        <section id="intro" class="mb-20 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Minha Jornada</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-card rounded-2xl p-8 shadow-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0">
+                        <div class="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
+                            <img src="img/2c0d81b3-733d-42b8-9216-ad2057d2746f.png" alt="Minha foto" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <h3 class="text-2xl font-semibold mb-4">Olá, eu sou davi muniz</h3>
+                        <p class="mb-4">Estudante de desenvolvimento web apaixonado por criar soluções inovadoras e aprender novas tecnologias. Durante este semestre, mergulhei profundamente no mundo do desenvolvimento front-end, explorando conceitos fundamentais e técnicas avançadas.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <h4 class="text-xl font-semibold mb-4">Expectativas vs Realidade</h4>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="p-6 bg-white dark:bg-slate-800 rounded-lg shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
+                                    <i class="fas fa-lightbulb text-white"></i>
+                                </div>
+                                <h5 class="text-lg font-medium">Expectativas Iniciais</h5>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300">Acreditava que desenvolver interfaces seria mais sobre código do que design. Imaginei dominar React rapidamente sem uma base sólida em JavaScript.</p>
+                        </div>
+                        <div class="p-6 bg-white dark:bg-slate-800 rounded-lg shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check-circle text-white"></i>
+                                </div>
+                                <h5 class="text-lg font-medium">Realidade Descoberta</h5>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300">Percebi que UX/UI é crucial. Entendi a importância de fundamentos sólidos antes de frameworks. A progressão orgânica trouxe entendimentos mais profundos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="mb-20 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Minha Linha do Tempo</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="absolute left-14 md:left-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700 transform -translate-x-1/2"></div>
+                
+                <!-- Project 1 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="img/solar.PNG" alt="Primeiro Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -left-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">Landing Page Responsiva</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Maio 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Sistema Solar em html css e keyframes</p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">HTML5</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">CSS3</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Responsive</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Ajustar elementos para diferentes telas</li>
+                                            <li>Manter consistência visual</li>
+                                            <li>Organizar código de forma limpa</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400"></p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="https://davimuniz1.github.io/atividade-/" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pl-16 md:order-last mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="img/oi.PNG" alt="Segundo Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -right-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">Painel de Dashboard</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Maio 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Sabores Da Terras</p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">CSS Grid</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Flexbox</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Chart.js</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Organizar layout complexo com múltiplas seções</li>
+                                            <li>Implementar gráficos interativos</li>
+                                            <li>Manter consistência em diferentes dispositivos</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400"></p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href=" https://davimuniz1.github.io/SaboresDaTerra/" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="img/figman.PNG" alt="Terceiro Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -left-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">Portfólio Pessoal</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Maio 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Desenvolvimento de um portfólio profissional com design moderno e totalmente responsivo.</p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">figman</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Criatividade</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Animations</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Criar uma identidade visual única</li>
+                                            <li>Implementar transições suaves</li>
+                                            <li>Otimizar performance</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400"> importância de design pessoal e técnicas de otimização.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="https://www.figma.com/design/KkRMNUTEocdl3Q5AQEAy81/carro?node-id=7-7&t=obaV6b8IQSOvuafG-1" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dentro da seção Timeline, após o Project 3 existente, adicione: -->
+
+<!-- Project 4 -->
+<div class="mb-16 relative">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 md:pl-16 md:order-last mb-8 md:mb-0">
+            <div class="relative group">
+                <img src="img/Capturar.PNG" alt="Quarto Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -right-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">E-commerce Simples</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Maio 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Desenvolvimento de um site de Formula 1 </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">html</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">css</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">criatividade</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Gerenciar estado do carrinho</li>
+                                            <li>Persistir dados no navegador</li>
+                                            <li>Calcular totais dinamicamente</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Manipulação avançada do DOM, armazenamento local e lógica de programação para e-commerce.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="https://giorgiorgio221.github.io/Formula-1/" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="img/site 1.PNG" alt="Quinto Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -left-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">Sistema de Tarefas</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Maio 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">primeiro site </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">html</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">css</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs"></span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Operações básicas de banco de dados no front-end, manipulação de arrays complexos e filtragem de dados.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="https://davimuniz1.github.io/primeiro-site/" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pl-16 md:order-last mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="Sexto Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -right-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">API Weather App</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Agosto 2023</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Aplicativo de previsão do tempo consumindo API pública.</p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Fetch API</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Async/Await</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">JSON</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Consumir API externa</li>
+                                            <li>Tratar erros de conexão</li>
+                                            <li>Exibir dados dinâmicos</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Requisições assíncronas, tratamento de promises e manipulação de dados JSON em tempo real.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="#" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="mb-16 relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
+                            <div class="relative group">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sétimo Projeto" class="rounded-lg shadow-xl w-full transform transition duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent rounded-lg opacity-0 group-hover:opacity-80 transition duration-500"></div>
+                                <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                                    <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-700">Ver Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-16 relative">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg relative">
+                                <div class="absolute top-4 -left-4 w-8 h-8 bg-white dark:bg-slate-800 transform rotate-45 z-0"></div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold">React Task Manager</h3>
+                                        <span class="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 px-2 py-1 rounded">Setembro 2023</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Primeiro projeto com React - gerenciador de tarefas com hooks.</p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">React</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Hooks</span>
+                                        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs">Componentes</span>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Desafios:</h4>
+                                        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-400">
+                                            <li>Entender ciclo de vida de componentes</li>
+                                            <li>Gerenciar estado da aplicação</li>
+                                            <li>Componentizar funcionalidades</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-medium mb-2">Aprendizados:</h4>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Fundamentos do React, uso de hooks como useState e useEffect, e arquitetura de componentes.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <a href="#" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">Ver projeto completo</a>
+                                        <div class="flex items-center">
+                                            <span class="text-xs mr-2">Avaliação:</span>
+                                            <span class="text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Habilidades Adquiridas</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-card rounded-2xl p-8 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Progressão Técnica</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span>HTML5 & CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-[90%]"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span>Responsive Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-[85%]"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span>CSS Grid & Flexbox</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-[80%]"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span>Tailwind CSS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-[75%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Certificações</h3>
+                        
+                        <div class="bg-white dark:bg-slate-800 rounded-lg p-5 shadow mb-4 transform transition duration-500 hover:scale-105">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-certificate text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Fundamentos de Web Design</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Coursera - Abril 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-slate-800 rounded-lg p-5 shadow mb-4 transform transition duration-500 hover:scale-105">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-certificate text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">CSS Avançado</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Udemy - Maio 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-slate-800 rounded-lg p-5 shadow transform transition duration-500 hover:scale-105">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-certificate text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Framework Tailwind CSS</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Alura - Junho 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection Section -->
+        <section id="reflection" class="mb-20 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Reflexão Final</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-card rounded-2xl p-8 shadow-xl">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow transform transition duration-500 hover:scale-105">
+                        <div class="w-14 h-14 bg-indigo-50 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-chart-line text-indigo-600 dark:text-indigo-300 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">Evolução</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-center">Do HTML básico ao domínio de frameworks CSS, minha jornada foi marcada por aprendizado constante e superação de desafios técnicos e criativos.</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow transform transition duration-500 hover:scale-105">
+                        <div class="w-14 h-14 bg-indigo-50 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-eye text-indigo-600 dark:text-indigo-300 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">Visão</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-center">Compreendi que o desenvolvimento front-end vai além do código - é sobre criar experiências significativas que conectam pessoas e tecnologia.</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow transform transition duration-500 hover:scale-105">
+                        <div class="w-14 h-14 bg-indigo-50 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-rocket text-indigo-600 dark:text-indigo-300 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">Futuro</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-center">Planejo aprofundar meus conhecimentos em acessibilidade, performance e frameworks modernos como React e Vue.js.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="gradient-bg text-white py-16 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Vamos Conversar</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-card rounded-2xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Informações de Contato</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:seuemail@exemplo.com" class="text-indigo-100">davimuniz.dias7@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">GitHub</h4>
+                                    <a href="https://github.com/davimuniz1" target="_blank" class="text-indigo-100 hover:underline">github.com/davimuniz</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/davi-muniz-a88915306/" target="_blank" class="text-indigo-100 hover:underline">linkedin.com/in/davimuniz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Formulário de Contato</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2">Seu Nome</label>
+                                <input type="text" id="name" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block mb-2">Seu Email</label>
+                                <input type="email" id="email" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block mb-2">Sua Mensagem</label>
+                                <textarea id="message" rows="4" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-white text-indigo-600 py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition duration-300">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p>© 2025 Meu Portfólio de Aprendizado. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
